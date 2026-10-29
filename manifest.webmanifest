@@ -1,0 +1,19 @@
+{
+  "name": "ECI → eNodeB Finder — 4G ECI / 5G NCI",
+  "short_name": "ECI Finder",
+  "description": "แปลง 4G ECI → eNodeB ID ค้นหา Cellname จาก DB QGIS · Develop by napatm@ais.co.th",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f6f1",
+  "theme_color": "#1b2a10",
+  "lang": "th",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
