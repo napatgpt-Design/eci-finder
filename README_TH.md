@@ -1,8 +1,14 @@
-# ECI → eNodeB Finder v3.1 (PWA) — ใช้ได้ทั้ง Online / Offline
+# ECI → eNodeB Finder v3.2 (PWA) — ใช้ได้ทั้ง Online / Offline
 
 Develop by napatm@ais.co.th
 
-## v3.0 — เข้าสู่ระบบด้วย Google · ใช้ได้เฉพาะผู้ได้รับอนุญาต
+## v3.2 — ระบบ Login ปิดอยู่ (ค่าเริ่มต้น)
+- เปิดแอปแล้วใช้งานได้ทันที ไม่ต้อง Login · ซิงค์ DB จาก Google Drive ได้ทุกเครื่อง
+- **อัปโหลด DB ขึ้น Drive (ผู้ดูแล)**: ⚙️ ในการ์ด DB → ใส่ **รหัสผู้ดูแล** (UPLOAD_KEY ที่ได้ตอนสร้าง Apps Script v2.1) → การ์ด 👑 จะแสดง → กดอัปโหลด
+- สร้างไฟล์: `python ECI_to_eNodeB_PWA_v3.2.py --gas-url <URL /exec>` (ไม่ต้องใช้ Client ID)
+- **เปิด Login คืน**: สร้างแอปด้วย `--auth --client-id …` และตั้ง `AUTH_ENABLED = true` ใน Apps Script (ต้องตรงกันทั้ง 2 ฝั่ง) — รายชื่อผู้ใช้เดิมยังเก็บไว้ ใช้ต่อได้ทันที
+
+## (เมื่อเปิด Login) เข้าสู่ระบบด้วย Google · ใช้ได้เฉพาะผู้ได้รับอนุญาต
 | บทบาท | ทำอะไรได้ |
 |---|---|
 | 👑 ผู้ดูแล `napat.gpt@gmail.com` | ทุกอย่าง + **เพิ่ม/ลบผู้ใช้** + **อัปโหลด DB ขึ้น Google Drive** (การ์ด 👑 ผู้ดูแลระบบ) |
@@ -40,7 +46,7 @@ Develop by napatm@ais.co.th
 3. **Deploy → Manage deployments → ✏️ → Version: New version → Deploy** (URL `/exec` เดิมไม่เปลี่ยน)
 
 ## ขั้นตอนที่ 3 — สร้างและวางแอปบน GitHub Pages
-1. `python ECI_to_eNodeB_PWA_v3.1.py --gas-url <URL /exec> --client-id <Client ID>`
+1. `python ECI_to_eNodeB_PWA_v3.2.py --gas-url <URL /exec> --client-id <Client ID>`
 2. GitHub repository → **Add file → Upload files** → ลากไฟล์ทั้งหมด (ยกเว้น `README_TH.md`) → **Commit changes**
 3. (ครั้งแรก) **Settings → Pages** → Branch **main** / **(root)** → Save → ได้ `https://<ชื่อผู้ใช้>.github.io/eci-finder/`
 
