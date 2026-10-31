@@ -1,5 +1,5 @@
 /* ECI → eNodeB Finder v3.2 — Service Worker · Develop by napatm@ais.co.th */
-const CACHE = 'eci-enodeb-v3.2';
+const CACHE = 'eci-enodeb-v3.2-20261031101309';   // เปลี่ยนทุกครั้งที่สร้างไฟล์ใหม่ → เครื่องผู้ใช้ได้รับอัปเดตเสมอ
 const FONT_CACHE = 'eci-enodeb-fonts';
 const TILE_CACHE = 'eci-enodeb-tiles', TILE_MAX = 1500;
 const TILE_HOSTS = /(^mt\d\.google\.com$)|(^tile\.openstreetmap\.org$)|(^server\.arcgisonline\.com$)|(\.tile\.opentopomap\.org$)/;

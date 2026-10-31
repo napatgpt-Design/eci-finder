@@ -1276,7 +1276,7 @@ footer b{color:var(--brand-dd)}
    ECI → eNodeB Finder v3.2  – client
    =================================================================== */
 var APP_VERSION = '3.2';
-var CFG = { GAS_URL:'', CLIENT_ID:'', ADMIN:'napat.gpt@gmail.com', AUTH:false };
+var CFG = { GAS_URL:'https://script.google.com/macros/s/AKfycbxHu0vDbbCQnVv1f1iFwGdmyfeKmGW99pt6-PNRTda3XTonnyD8eOj4vcxbS2qwjY0P/exec', CLIENT_ID:'', ADMIN:'napat.gpt@gmail.com', AUTH:false };
 var ADMKEY_KEY='eci_admin_key';
 function admKey(){ try{ return localStorage.getItem(ADMKEY_KEY)||''; }catch(e){ return ''; } }
 var MAX_ECI     = 268435455;       // 2^28 - 1
